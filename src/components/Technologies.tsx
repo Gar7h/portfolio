@@ -1,9 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri"
 import { FaLaravel } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { IconContext } from "react-icons";
 import pythonlogo from "../assets/python-logo-only.png"
 import javalogo from "../assets/javalogo.png"
 import sqllogo from "../assets/MySQL-Logo.wine.png"
