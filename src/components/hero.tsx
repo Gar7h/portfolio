@@ -1,8 +1,6 @@
-import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
 import { motion } from "motion/react"
 
-const appear = (delay) => ({
+const appear = (delay: number) => ({
   hidden: {opacity: 0},
   visible: {
     opacity: 1,
