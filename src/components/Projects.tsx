@@ -1,3 +1,4 @@
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react";
 import { PROJECTS } from "../constants"
 import { motion } from "motion/react";
 
@@ -5,7 +6,7 @@ const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
         <h2 className="my-20 text-center text-4xl">Projects</h2>
-        <div>{PROJECTS.map((project, index) => (
+        <div>{PROJECTS.map((project: { image: string | undefined; title: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; description: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; technologies: any[]; }, index: Key | null | undefined) => (
             <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
                 <motion.div
                 whileInView={{ opacity: 1, x: 0}}
@@ -17,7 +18,7 @@ const Projects = () => {
                     src={project.image}
                     width={150}
                     height={150}
-                    alt={project.title}
+                    alt='{project.title}'
                     className="mb-6 rounded" 
                 />
             </motion.div>

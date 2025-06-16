@@ -9,7 +9,7 @@ import javalogo from "../assets/javalogo.png"
 import sqllogo from "../assets/MySQL-Logo.wine.png"
 import { motion } from "motion/react"
 
-const iconVariants = (duration) => ({
+const iconVariants = (duration: number) => ({
   initial: {y: -10},
   animate: {
     y: [10, -10],
