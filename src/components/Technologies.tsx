@@ -5,17 +5,18 @@ import pythonlogo from "../assets/python-logo-only.png"
 import javalogo from "../assets/javalogo.png"
 import sqllogo from "../assets/MySQL-Logo.wine.png"
 import { motion } from "motion/react"
+import { Variants } from "motion/react";
 
-const iconVariants = (duration: number) => ({
-  initial: {y: -10},
+const iconVariants = (duration: number): Variants => ({
+  initial: { y: -10 },
   animate: {
     y: [10, -10],
     transition: {
       duration: duration,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse"
-    }
+      repeatType: "reverse",
+    },
   },
 });
 
