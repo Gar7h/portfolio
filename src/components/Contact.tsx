@@ -37,16 +37,6 @@ const Contact = () => {
             viewport={{once: true}}
             className="my-4">{CONTACT.address}</motion.p>
             <motion.div
-            whileInView={{ opacity: 1, x: 0}}
-            initial={{ opacity: 0, x: 100}}
-            transition={{duration: 0.5}}
-            viewport={{once: true}}
-            className="my-4 text-gray hover:text-gray-400">
-             <button className="inline-flex items-center gap-1" 
-              onClick={(e) => copyToClipboard(e, CONTACT.phoneNo, "Phone Number")}
-              >{CONTACT.phoneNo} <MdContentCopy /></button><Toaster /> 
-            </motion.div>
-            <motion.div
             whileInView={{ opacity: 1, y: 0}}
             initial={{ opacity: 0, y: 100}}
             transition={{duration: 0.5}}

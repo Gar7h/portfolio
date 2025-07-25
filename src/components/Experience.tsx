@@ -1,3 +1,4 @@
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react";
 import { EXPERIENCES } from "../constants";
 import { motion } from "motion/react";
 
@@ -11,7 +12,7 @@ const Experience = () => {
         viewport={{once: true}}
         className="my-20 text-center text-4xl">Experience</motion.h2>
       <div>
-        {EXPERIENCES.map((experience, index) => (
+        {EXPERIENCES.map((experience: { year: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; role: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; company: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; description: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; technologies: any[]; }, index: Key | null | undefined) => (
             <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
                 <motion.div
                 whileInView={{ opacity: 1, x: 0}}
