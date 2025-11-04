@@ -11,14 +11,15 @@ export const EXPERIENCES = [
     year: "2022 - 2023",
     role: "Application Developer",
     company: "BINUS @Kemanggisan Angrek Campus",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `Conducted market research within similar applications for better understanding of user’s demand and built a web-based application using the framework Laravel to create a room temperature management system.
+`,
     technologies: ["Laravel", "Vite", "PHP"],
   },
   {
     year: "2024",
     role: "Freelance Designer",
     company: "Digital Trans-Asia",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    description: `Redesigns graphic for localization purpose and executes typesetting web graphic novels for Chinese publishers.`,
     technologies: ["Photoshop", "Excel"],
   },
 
