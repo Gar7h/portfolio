@@ -34,7 +34,7 @@ export const PROJECTS = [
     technologies: ["Laravel", "Bootstrap"],
   },
   {
-    title: "Clinic Management App",
+    title: "Health Center Management App",
     image: project2,
     description:
       "An application designed to manage clinic operations, featuring tools for administration, medical record storage, employee and medication data management, and client transactions.",
